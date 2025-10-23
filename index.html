@@ -5,65 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* === Topbar === */
+        .topbar {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 14px 0;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: "Segoe UI", Arial, sans-serif;
+            letter-spacing: 0.5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        body {
+            margin: 0;
+            padding-top: 60px;
+            background-color: #f3f4f6;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        /* Gör kort klickbara utan att förstöra layouten */
+        a.card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a.card-link:hover .card {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
 <body>
+
+    <div class="topbar">
+        Välkommen till ParaplyTest
+    </div>
+
     <div class="container">
-        <div class="card grey">
-            <div class="icon">📄</div>
-            <div class="title">Mina ärenden</div>
-        </div>
-        <div class="card grey">
-            <div class="icon">📚</div>
-            <div class="title">Dokumentation och Guider</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">💻</div>
-            <div class="title">IT</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">🧮</div>
-            <div class="title">Ekonomi</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">💵</div>
-            <div class="title">Lön</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">👥</div>
-            <div class="title">Mina Resurser</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">🎓</div>
-            <div class="title">Elev</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">💻</div>
-            <div class="title">IT - ärenden Elev</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">⚠️</div>
-            <div class="title">Säkerhetsincidenter</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">🔧</div>
-            <div class="title">Förbättringsförslag portalen</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">🚪</div>
-            <div class="title">Passersystem</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">📑</div>
-            <div class="title">Uppdragsbeställning: Omorganisation & HR</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">📑</div>
-            <div class="title">Uppdragsbeställning: IT</div>
-        </div>
-        <div class="card blue">
-            <div class="icon">📑</div>
-            <div class="title">Uppdragsbeställning: Intern</div>
-        </div>
+        <a href="arenden.html" class="card-link">
+            <div class="card grey">
+                <div class="icon">📄</div>
+                <div class="title">Mina ärenden</div>
+            </div>
+        </a>
+
+        <a href="guider.html" class="card-link">
+            <div class="card grey">
+                <div class="icon">📚</div>
+                <div class="title">Dokumentation och Guider</div>
+            </div>
+        </a>
+
+        <a href="it.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">💻</div>
+                <div class="title">IT</div>
+            </div>
+        </a>
+
+        <a href="ekonomi.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">🧮</div>
+                <div class="title">Ekonomi</div>
+            </div>
+        </a>
+
+        <a href="lon.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">💵</div>
+                <div class="title">Lön</div>
+            </div>
+        </a>
+
+        <a href="resurser.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">👥</div>
+                <div class="title">Mina Resurser</div>
+            </div>
+        </a>
+
+        <a href="elev.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">🎓</div>
+                <div class="title">Elev</div>
+            </div>
+        </a>
+
+        <a href="it-elev.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">💻</div>
+                <div class="title">IT - ärenden Elev</div>
+            </div>
+        </a>
+
+        <a href="sakerhetsincidenter.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">⚠️</div>
+                <div class="title">Säkerhetsincidenter</div>
+            </div>
+        </a>
+
+        <a href="forbattring.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">🔧</div>
+                <div class="title">Förbättringsförslag portalen</div>
+            </div>
+        </a>
+
+        <a href="passersystem.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">🚪</div>
+                <div class="title">Passersystem</div>
+            </div>
+        </a>
+
+        <a href="hr.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">📑</div>
+                <div class="title">Uppdragsbeställning: Omorganisation & HR</div>
+            </div>
+        </a>
+
+        <a href="uppdrag-it.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">📑</div>
+                <div class="title">Uppdragsbeställning: IT</div>
+            </div>
+        </a>
+
+        <a href="uppdrag-intern.html" class="card-link">
+            <div class="card blue">
+                <div class="icon">📑</div>
+                <div class="title">Uppdragsbeställning: Intern</div>
+            </div>
+        </a>
     </div>
 </body>
 </html>
